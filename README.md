@@ -9,7 +9,7 @@ Criar cadastro de animais com adição de imagem <br />
 Diferenciar Médico de Usuário dentro do Sistema <br />
 No login do médico verificar se há algum animal relacionado para o atendimento <br />
 ### Configs do projeto:
-Realizar o projeto com o padrão de desenvolvimento MVC, para o desenvolvimento Front-End utilizar Vue ou React, para estilização utilizar Tailwind, para o backend utlizar Laravel. Para fazer a instalação do projeto utilizar o pacote breeze para instalar a lib de Front-End, e já com breeze vem implementado o inertia e o login e register de usuários.
+Realizar o projeto com o padrão de desenvolvimento MVC, para o desenvolvimento Front-End utilizar Vue, para estilização utilizar Tailwind, para o backend utlizar Laravel. Para fazer a instalação do projeto utilizar o pacote breeze para instalar a lib de Front-End, e já com breeze vem implementado o inertia e o login e register de usuários.
 
 
 
