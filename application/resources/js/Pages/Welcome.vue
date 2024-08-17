@@ -1,9 +1,8 @@
 <template>
-    <div>
-        <h1>Subindo template do projeto PetShop - Tec</h1>
-    </div>
+    <Login />
 </template>
 
 <script setup>
-
+import Header from '@/Components/Header.vue';
+import Login from './Auth/Login.vue';
 </script>
