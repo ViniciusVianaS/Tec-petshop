@@ -9,7 +9,7 @@ Criar cadastro de animais com adição de imagem <br />
 Diferenciar Médico de Usuário dentro do Sistema <br />
 No login do médico verificar se há algum animal relacionado para o atendimento <br />
 ### Configs do projeto: 📚
-Realizar o projeto com o padrão de desenvolvimento MVC, para o desenvolvimento Front-End utilizar Blade, Tailwind e bootstrap, para o backend utlizar Laravel. E instalar a biblioteca jetstream para fazer a autenticação de usuarios.
+Realizar o projeto com o padrão de desenvolvimento MVC, para o desenvolvimento Front-End utilizar Blade, Tailwind e bootstrap, para o backend utlizar Laravel e instalar a biblioteca jetstream para fazer a autenticação de usuarios.
 
 
 
