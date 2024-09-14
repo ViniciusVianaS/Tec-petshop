@@ -26,7 +26,7 @@
                 href="#">Ajustes</a>
         </nav>
         <div class="flex justify-center items-center mr-2">
-            <a href="#"
+            <a href="/login"
                 class="text-white font-bold bg-orange-500 p-1 rounded hover:bg-orange-600 duration-300">Sign
                 In</a>
             <div>
