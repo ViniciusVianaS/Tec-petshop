@@ -14,4 +14,8 @@ class Pets extends Model
         'nome',
         'pet',
     ];
+
+    public function user(){
+        return $this->belongsTo('App\Models\User');
+    }
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Pets;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class CadastroController extends Controller
@@ -30,8 +31,31 @@ class CadastroController extends Controller
 
             $pet->image = $imageName;
         }
+        $user = auth()->User();
+        $pet->user_id = $user->id;
+
         $pet->save();
 
-        return redirect('/')->with('msg', "Pet inserido com sucesso!");
+        return redirect('/dashboard');
+        
+    }
+
+    public function show($id)
+    {
+        $pet = Pets::findOrFail($id);
+
+        $petOwner = User::where('id', $pet->user_id)->first()->toArray();
+
+        return view('dashboard', ['pets' => $pet, 'petOwner' => $petOwner]);
+    }
+
+
+    public function dashboard() 
+    {
+        $user = auth()->User();
+        
+        $pets = $user->pets;
+
+        return view('dashboard', ['pets' => $pets]);
     }
 }

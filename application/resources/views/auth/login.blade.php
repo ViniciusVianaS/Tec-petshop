@@ -43,7 +43,7 @@
                     {{ __('Log in') }}
                 </x-button>
             </div>
-            <p>Não é cadastrado? <a href="/register" class="text-orange-500">Cadastre-se</a></p>
+            <p>Não é cadastrado? <a href="/register" class="underline text-sm text-orange-500 hover:text-orange-700 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('register') }}">Cadastre-se</a></p>
         </form>
     </x-authentication-card>
 </x-guest-layout>

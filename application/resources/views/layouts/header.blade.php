@@ -18,20 +18,40 @@
             </a>
         </div>
         <nav class="ml-2 flex">
-            <a class="ml-8 text-orange-500 font-bold rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
-                href="/">Home</a>
-            <a class="ml-8 text-orange-500 font-bold rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
-                href="/actions/create">Cadastrar pet</a>
-            <a class="ml-8 text-orange-500 font-bold rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
-                href="#">Ajustes</a>
+            <a class="ml-8 text-orange-500 font-medium rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
+                href="/">HOME</a>
+            <a class="ml-8 text-orange-500 font-medium rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
+                href="/actions/create">CADASTRAR PET</a>
         </nav>
         <div class="flex justify-center items-center mr-2">
-            <a href="/login"
-                class="text-white font-bold bg-orange-500 p-1 rounded hover:bg-orange-600 duration-300">Sign
-                In</a>
-            <div>
-                <img src="/images/perfil.png" class="h-10 ml-5" alt="user">
-            </div>
+            @guest
+                <a href="/login" title="Login"
+                    class="bg-orange-500 hover:bg-orange-600 cursor-pointer duration-300 text-white flex items-center justify-center gap-2 p-1 rounded font-medium ml-3">
+                    <span class="hidden md:flex">Login</span>
+                </a>
+                <a href="/register" title="Registrar"
+                    class="bg-rose-500 hover:bg-rose-600 cursor-pointer duration-300 text-white flex items-center justify-center gap-2 p-1 rounded font-medium ml-3">
+                    <span class="hidden md:flex">Cadastrar-se</span>
+                </a>
+            @endguest
+            @auth
+                <a href="/dashboard" title="Meus Pets"
+                    class="bg-orange-500 hover:bg-orange-600 cursor-pointer duration-300 text-white flex items-center justify-center gap-2 p-1 rounded font-medium ml-3">
+                    <span class="hidden md:flex">Meus pets</span>
+                    <img class="h-8" src="/images/dog.png" alt="logo do dog">
+                </a>
+                <li class="list-none">
+                    <form action="/logout" method="POST">
+                        @csrf
+                        <a href="/logout" title="Sair"
+                            onclick="event.preventDefault();
+                             this.closest('form').submit();"
+                            class="bg-rose-500 hover:bg-rose-600 cursor-pointer duration-300 text-white flex items-center justify-center gap-2 p-[7.7px] rounded font-medium ml-3">
+                            <span>Sair</span>
+                        </a>
+                    </form>
+                </li>
+            @endauth
         </div>
     </header>
 
