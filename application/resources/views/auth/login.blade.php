@@ -44,6 +44,7 @@
                 </x-button>
             </div>
             <p>Não é cadastrado? <a href="/register" class="underline text-sm text-orange-500 hover:text-orange-700 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('register') }}">Cadastre-se</a></p>
+            <p>Você é médico e quer entrar no sistema? <a class="underline text-sm text-orange-500 hover:text-orange-700 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('medico.login') }}">Entrar</a></p>
         </form>
     </x-authentication-card>
 </x-guest-layout>
