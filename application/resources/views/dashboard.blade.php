@@ -6,7 +6,7 @@
     <link rel="icon" href="{{ asset('dog.png') }}" type="image/png">
     @vite('resources/css/app.css')
 
-    <body class="bg-slate-200">
+    <body class="bg-slate-100">
         @if (count($pets) > 0)
             <h1 class="text-3xl font-medium ml-4 text-orange-500">Meus Pets</h1>
             @foreach ($pets as $pet)

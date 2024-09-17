@@ -35,11 +35,6 @@
                 </a>
             @endguest
             @auth
-                <a href="/dashboard" title="Meus Pets"
-                    class="bg-orange-500 hover:bg-orange-600 cursor-pointer duration-300 text-white flex items-center justify-center gap-2 p-1 rounded font-medium ml-3">
-                    <span class="hidden md:flex">Meus pets</span>
-                    <img class="h-8" src="/images/dog.png" alt="logo do dog">
-                </a>
                 <li class="list-none">
                     <form action="/logout" method="POST">
                         @csrf

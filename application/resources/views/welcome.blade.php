@@ -7,7 +7,7 @@
     <link rel="icon" href="{{ asset('dog.png') }}" type="image/png" />
     @vite('resources/css/app.css')
 
-    <body class="bg-slate-200">
+    <body class="bg-slate-100">
         <main class="flex flex-col p-5">
             <h1 class="text-3xl font-medium text-orange-500">Está procurando atendimento para seu pet?</h1>
             <section class="grid grid-cols-1 gap-4 mt-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -36,22 +36,11 @@
             </section>
             <section class="mt-6">
                 <h1 class="text-2xl font-medium text-orange-500">Veja os profissionais disponiveis para atender seu pet</h1>
-                <div class="mt-6 p-2 rounded bg-white w-[300px]">
-                    <a class="font-semibold" href="#">Doutor Manél - Disponivel <i
-                            class="fa-sharp fa fa-arrow-right justify-end items-end ml-16"></i></a>
-                </div>
-                <div class="mt-6 p-2 rounded bg-white w-[300px]">
-                    <a class="font-semibold" href="#">Doutor Manél - Disponivel <i
-                            class="fa-sharp fa fa-arrow-right justify-end items-end ml-16"></i></a>
-                </div>
-                <div class="mt-6 p-2 rounded bg-white w-[300px]">
-                    <a class="font-semibold" href="#">Doutor Manél - Disponivel <i
-                            class="fa-sharp fa fa-arrow-right justify-end items-end ml-16"></i></a>
-                </div>
-                <div class="mt-6 p-2 rounded bg-white w-[300px]">
-                    <a class="font-semibold" href="#">Doutor Manél - Disponivel <i
-                            class="fa-sharp fa fa-arrow-right justify-end items-end ml-16"></i></a>
-                </div>
+                @foreach ($medicos as $medico)
+                    <div class="mt-6 p-2 rounded bg-white w-[300px]">
+                        <a class="font-semibold" href="#">Doutor {{$medico->name}} - Disponivel</a>
+                    </div>
+                @endforeach
             </section>
         </main>
     </body>

@@ -22,6 +22,8 @@
                 href="/">HOME</a>
             <a class="ml-8 text-orange-500 font-medium rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
                 href="/actions/create">CADASTRAR PET</a>
+            <a class="ml-8 text-orange-500 font-medium rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
+                href="#">ATENDIMENTO</a>
         </nav>
         <div class="flex justify-center items-center mr-2">
             @guest
