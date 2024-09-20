@@ -9,7 +9,7 @@ Esse projeto vai ser elaborado para que simule um petshop ou uma clínica de ate
 - Diferenciar Médico de Usuário dentro do Sistema
 - No login do médico verificar se há algum animal relacionado para o atendimento
 ### Configs do projeto: 📚
-Realizar o projeto com o padrão de desenvolvimento MVC, para o desenvolvimento Front-End utilizar Blade, Tailwind e bootstrap, para o backend utlizar Laravel e instalar a biblioteca jetstream para fazer a autenticação de usuarios.
+Realizar o projeto com o padrão de desenvolvimento MVC, para o desenvolvimento Front-End utilizar Blade e Tailwind, para o backend utlizar Laravel e instalar a biblioteca jetstream para fazer a autenticação de usuarios.
 
 
 
