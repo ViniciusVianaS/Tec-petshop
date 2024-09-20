@@ -11,4 +11,8 @@ class Medico extends Authenticatable
     protected $fillable = ['name', 'email', 'password'];
 
     protected $hidden = ['password', 'remember_token'];
+
+    public function pets() {
+        return $this->belongsToMany('App\Models\Pets');
+    }
 }

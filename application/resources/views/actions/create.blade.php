@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <body class="bg-slate-200">
+    <body class="bg-slate-100">
         <main class="flex flex-col justify-center items-center p-5">
             <h1 class="text-4xl font-medium text-orange-500">Cadastre seu pet</h1>
             <form action="/pets" method="POST" enctype="multipart/form-data" class="mt-6 w-[300px]">

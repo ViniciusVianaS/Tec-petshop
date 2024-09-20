@@ -11,8 +11,18 @@ Route::get('/', function () {
     return view('welcome');
 })->middleware('auth');
 
+// Pets Routes
+Route::get('/actions/create', [CadastroController::class, 'index'])->middleware('auth');
+Route::get('/atendimento', [CadastroController::class, 'atendimento'])->middleware('auth');
+Route::get('/atendimento', [MedicoController::class, 'indexMedico']);
+Route::post('/pets', [CadastroController::class, "store"]);
+Route::get('/pets/{id}', [CadastroController::class, "show"]);
+Route::get('/dashboard', [CadastroController::class, 'dashboard'])->middleware('auth');
+Route::post('/atendimento', [MedicoController::class, 'store']);
+
+
 // Medico Routes
-Route::get('/', [MedicoController::class, 'index']);
+Route::get('/', [MedicoController::class, 'index'])->middleware('auth');
 Route::get('medico/login', [MedicoAuthController::class, 'showLoginForm'])->name('medico.login');
 Route::post('medico/login', [MedicoAuthController::class, 'login']);
 Route::post('medico/logout', [MedicoAuthController::class, 'logout'])->name('medico.logout');
@@ -26,13 +36,6 @@ Route::middleware(['auth:medico'])->group(function () {
         return view('medico.dashboard');
     })->name('medico.dashboard');
 });
-
-
-// Pets Routes
-Route::get('/actions/create', [CadastroController::class, 'index'])->middleware('auth');
-Route::post('/pets', [CadastroController::class, "store"]);
-Route::get('/pets/{id}', [CadastroController::class, "show"]);
-Route::get('/dashboard', [CadastroController::class, 'dashboard'])->middleware('auth');
 
 Route::middleware([
     'auth:sanctum',

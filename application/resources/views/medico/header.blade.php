@@ -13,15 +13,19 @@
 <body>
     <header class="p-2 w-full top-0 flex items-center justify-between bg-white">
         <div class="flex justify-center">
-            <a href="/">
+            <a href="/medico/dashboard">
                 <img class="h-14" src="/images/dog.png" alt="logo do dog">
             </a>
         </div>
         <nav class="ml-2 flex">
             <a class="ml-8 text-orange-500 font-medium rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
-                href="/medico/dashboard">HOME</a>
+                href="/medico/dashboard">
+                HOME
+            </a>
             <a class="ml-8 text-orange-500 font-medium rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
-                href="/actions/create">ATENDIMENTO</a>
+                href="#">
+                SEUS ATENDIMENTOS
+            </a>
         </nav>
         <div class="flex justify-center items-center mr-2">
             @guest

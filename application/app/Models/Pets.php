@@ -18,4 +18,8 @@ class Pets extends Model
     public function user(){
         return $this->belongsTo('App\Models\User');
     }
+
+    public function medicos() {
+        return $this->belongsToMany('App\Models\Medico');
+    }
 }

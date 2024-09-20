@@ -13,6 +13,10 @@ class CadastroController extends Controller
     {
         return view('actions.create');
     }
+    public function atendimento()
+    {
+        return view('atendimento');
+    }
 
     public function store(Request $request)
     {
@@ -48,7 +52,6 @@ class CadastroController extends Controller
 
         return view('dashboard', ['pets' => $pet, 'petOwner' => $petOwner]);
     }
-
 
     public function dashboard() 
     {

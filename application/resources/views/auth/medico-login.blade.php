@@ -31,6 +31,7 @@
             <div>
                 <button class="bg-slate-900 p-2 text-white font-semibold mt-4 rounded-lg" type="submit">LOG IN</button>
             </div>
+            <span class="mt-4 text-sm text-left">Você é médico e não tem acesso? <a href="/medico/register" class="text-orange-500">Cadastre-se</a></span>
         </form>
     </div>
 </body>
