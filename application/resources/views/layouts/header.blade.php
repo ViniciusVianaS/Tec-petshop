@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{ asset('dog.png') }}" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
     <title>@yield('title')</title>
@@ -18,12 +19,21 @@
             </a>
         </div>
         <nav class="ml-2 flex">
-            <a class="ml-8 text-orange-500 font-medium rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
-                href="/">HOME</a>
-            <a class="ml-8 text-orange-500 font-medium rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
-                href="/actions/create">CADASTRAR PET</a>
-            <a class="ml-8 text-orange-500 font-medium rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
-                href="/atendimento">ATENDIMENTO</a>
+            <a class="ml-8 text-orange-500 flex font-medium rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
+                href="/" title="Home">
+                <span class="hidden md:flex">HOME</span>
+                <i class="fa fa-home md:hidden flex" style="font-size: 22px;"></i>
+            </a>
+            <a class="ml-8 text-orange-500 flex font-medium rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
+                href="/actions/create" title="Cadastrar Pet">
+                <span class="hidden md:flex">CADASTRAR PET</span>
+                <i class="fa fa-plus md:hidden flex" style="font-size: 22px;"></i>
+            </a>
+            <a class="ml-8 text-orange-500 flex font-medium rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
+                href="/atendimento" title="Agendar Consulta">
+                <span class="hidden md:flex">AGENDAR</span>
+                <i class="fa fa-calendar md:hidden flex" style="font-size: 22px;"></i>
+            </a>
         </nav>
         <div class="flex justify-center items-center mr-2">
             @guest

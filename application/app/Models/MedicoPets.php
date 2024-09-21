@@ -14,5 +14,6 @@ class MedicoPets extends Model
     protected $fillable = [
         'pet_id',
         'medico_id',
+        'data_consulta'
     ];
 }

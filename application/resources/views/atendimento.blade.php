@@ -29,6 +29,12 @@
                         @endforeach
                     </select>
                 </div>
+                <div class="mt-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="data_consulta">Data do Atendimento:</label>
+                    <input
+                        class="block w-full text-gray-700 border-none rounded p-2 leading-tight focus:outline-none focus:bg-slate-100 focus:border-blue-500"
+                        type="date" name="data_consulta" id="data_consulta" required>
+                </div>
                 <button type="submit"
                     class="bg-orange-500 p-1 w-full rounded mt-4 text-white font-bold hover:bg-orange-600 duration-300">Enviar</button>
             </form>

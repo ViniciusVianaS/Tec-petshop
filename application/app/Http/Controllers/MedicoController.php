@@ -22,6 +22,7 @@ class MedicoController extends Controller
         $medicoPets = new MedicoPets();
         $medicoPets->pet_id = $request->pet_id;
         $medicoPets->medico_id = $request->medico_id;
+        $medicoPets->data_consulta = $request->data_consulta;
 
         $medicoPets->save();
 
