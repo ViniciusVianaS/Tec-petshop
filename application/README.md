@@ -1,3 +1,18 @@
-# Project Views
+# Project settings
 
-#### Telas do projeto
+### Tecnologias | Bibliotecas
+
+- Laravel & Blade
+- Tailwind
+- Mysql
+- Jetstream
+- Font Awesome   
+
+### Ferramentas
+
+- Vscode
+- Dbeaver
+- Git 
+- Github
+
+## Dependências do projeto
