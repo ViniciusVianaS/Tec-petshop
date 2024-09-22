@@ -1,7 +1,7 @@
 # Tec petshop - Em desenvolvimento 🚧
 ### Documentação do projeto ⚙
 ### Projeto:
-Esse projeto está sendo elaborado para que gerencie o atendimento em uma clinica veterinária. Criando duas interfaces, uma para usuário comum e seu pet e outra para o médico que irá atender o animal.
+Esse projeto está sendo elaborado para que gerencie o atendimento em uma clinica veterinária. Criando duas interfaces, uma para usuário e seu pet e outra para o médico que irá atender o pet.
 
 ### Funcionalidades:
 - Login de Usuários
@@ -9,8 +9,3 @@ Esse projeto está sendo elaborado para que gerencie o atendimento em uma clinic
 - Crud de pet com inclusão de imagens
 - Relacionamento de pet com usuário
 - Relacionamento de pet com médico para verficar atendimentos
-- 
-
-
-
-
