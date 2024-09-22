@@ -36,11 +36,13 @@
             </section>
             <section class="mt-6">
                 <h1 class="text-2xl font-medium text-orange-500">Veja os profissionais disponiveis para atender seu pet</h1>
-                @foreach ($medicos as $medico)
-                    <div class="mt-6 p-2 rounded bg-white w-[300px]">
-                        <a class="font-semibold" href="#">Doutor {{$medico->name}} - Disponivel</a>
-                    </div>
-                @endforeach
+                <div class="grid grid-cols-1 gap-4 mt-5 sm:grid-cols-2 lg:grid-cols-3">
+                    @foreach ($medicos as $medico)
+                        <div class="mt-6 p-2 rounded bg-white w-[300px]">
+                            <a class="font-semibold" href="#">Doutor {{ $medico->name }} - Disponivel</a>
+                        </div>
+                    @endforeach
+                </div>
             </section>
         </main>
     </body>
