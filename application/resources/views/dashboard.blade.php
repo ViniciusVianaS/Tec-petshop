@@ -18,6 +18,10 @@
                                 alt="{{ $pet->nome }}">
                             <p class="text-orange-500 text-2xl">{{ $pet->nome }}</p>
                             <p class="text-orange-500">{{ $pet->pet }}</p>
+                            <div class="flex mt-2">
+                                <a class="bg-orange-400 text-white p-1 rounded">Editar</a>
+                                <a class="ml-4 bg-red-500 text-white p-1 rounded">Deletar</a>
+                            </div>
                         </div>
                     </section>
                 </main>
