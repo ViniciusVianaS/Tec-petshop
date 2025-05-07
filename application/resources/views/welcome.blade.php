@@ -9,37 +9,37 @@
 
     <body class="bg-slate-100">
         <main class="flex flex-col p-5">
-            <h1 class="text-3xl font-medium text-orange-500">Está procurando atendimento para seu pet?</h1>
+            <h1 class="text-3xl font-medium text-black">Está procurando atendimento para seu pet?</h1>
             <section class="grid grid-cols-1 gap-4 mt-5 sm:grid-cols-2 lg:grid-cols-3">
                 <div
                     class="bg-white p-3 rounded-lg min-h-[200px] flex flex-col relative transition-shadow duration-300 ease-in-out cursor-pointer hover:shadow-lg">
                     <img class="rounded-lg w-full h-64 object-cover duration-300" src="/images/image1.jpg" alt="IA image">
-                    <p class="text-orange-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aut
+                    <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aut
                         provident, beatae quia
-                        perferendis.</p>
+                        perferendis.</p>   
                 </div>
                 </div>
                 <div
                     class="bg-white p-3 rounded-lg min-h-[200px] flex flex-col relative transition-shadow duration-300 ease-in-out cursor-pointer hover:shadow-lg">
                     <img class="rounded-lg w-full h-64 object-cover duration-300" src="/images/image2.jpg" alt="IA image">
-                    <p class="text-orange-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aut
+                    <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aut
                         provident, beatae quia
                         perferendis.</p>
                 </div>
                 <div
                     class="bg-white p-3 rounded-lg min-h-[200px] flex flex-col relative transition-shadow duration-300 ease-in-out cursor-pointer hover:shadow-lg">
                     <img class="rounded-lg w-full h-64 object-cover duration-300" src="/images/image3.jpg" alt="IA image">
-                    <p class="text-orange-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aut
+                    <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aut
                         provident, beatae quia
                         perferendis.</p>
                 </div>
             </section>
             <section class="mt-6">
-                <h1 class="text-2xl font-medium text-orange-500">Veja os profissionais disponiveis para atender seu pet</h1>
+                <h1 class="text-2xl font-medium text-black">Veja os profissionais disponiveis para atender seu pet</h1>
                 <div class="grid grid-cols-1 gap-4 mt-5 sm:grid-cols-2 lg:grid-cols-3">
                     @foreach ($medicos as $medico)
                         <div class="mt-6 p-2 rounded bg-white w-[300px]">
-                            <a class="font-semibold" href="#">Doutor {{ $medico->name }} - Disponivel</a>
+                            <a class="font-semibold" href="#">Doutor {{ $medico->name }} - Disponivel <i class="fa fa-signal" style="font-size: 22px; color: green; margin-left: 5px;"></i></a>
                         </div>
                     @endforeach
                 </div>

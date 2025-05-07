@@ -12,13 +12,15 @@ Route::get('/', function () {
 })->middleware('auth');
 
 // Pets Routes
-Route::get('/actions/create', [CadastroController::class, 'index'])->middleware('auth');
+Route::get('/pages/create', [CadastroController::class, 'index'])->middleware('auth');
 Route::get('/atendimento', [CadastroController::class, 'atendimento'])->middleware('auth');
 Route::get('/atendimento', [MedicoController::class, 'indexMedico']);
 Route::post('/pets', [CadastroController::class, "store"]);
 Route::get('/pets/{id}', [CadastroController::class, "show"]);
 Route::get('/dashboard', [CadastroController::class, 'dashboard'])->middleware('auth');
 Route::post('/atendimento', [MedicoController::class, 'store']);
+Route::get('/pages/edit', [CadastroController::class, 'edit'])->middleware('auth');
+
 
 
 // Medico Routes

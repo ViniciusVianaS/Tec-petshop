@@ -25,7 +25,7 @@
                 <i class="fa fa-home md:hidden flex" style="font-size: 22px;"></i>
             </a>
             <a class="ml-8 text-orange-500 flex font-medium rounded-lg hover:bg-slate-200 hover:p-1 duration-300"
-                href="/actions/create" title="Cadastrar Pet">
+                href="/pages/create" title="Cadastrar Pet">
                 <span class="hidden md:flex">CADASTRAR PET</span>
                 <i class="fa fa-plus md:hidden flex" style="font-size: 22px;"></i>
             </a>

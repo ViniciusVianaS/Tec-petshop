@@ -11,7 +11,7 @@ class CadastroController extends Controller
 {
     public function index()
     {
-        return view('actions.create');
+        return view('pages.create');
     }
     public function atendimento()
     {
@@ -60,5 +60,10 @@ class CadastroController extends Controller
         $pets = $user->pets;
 
         return view('dashboard', ['pets' => $pets]);
+    }
+
+    public function edit() 
+    {
+        return view('pages.edit');
     }
 }
