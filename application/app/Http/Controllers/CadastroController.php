@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Pets;
 use App\Models\User;
+use App\Models\Medico;
 use Illuminate\Http\Request;
 
 class CadastroController extends Controller
@@ -41,7 +42,6 @@ class CadastroController extends Controller
         $pet->save();
 
         return redirect('/dashboard');
-        
     }
 
     public function show($id)
@@ -53,17 +53,30 @@ class CadastroController extends Controller
         return view('dashboard', ['pets' => $pet, 'petOwner' => $petOwner]);
     }
 
-    public function dashboard() 
+    public function dashboard()
     {
         $user = auth()->User();
-        
+
         $pets = $user->pets;
 
         return view('dashboard', ['pets' => $pets]);
     }
 
-    public function edit() 
+    public function edit()
     {
         return view('pages.edit');
+    }
+
+    public function destroy($id)
+    {
+        $pet = Pets::findOrFail($id);
+
+        // Remove os vínculos do pet com médicos (tabela medico_pet)
+        $pet->medico()->detach();
+
+        // Agora é seguro excluir o pet
+        $pet->delete();
+
+        return redirect('/')->with('msg', 'Pet excluído com sucesso!');
     }
 }

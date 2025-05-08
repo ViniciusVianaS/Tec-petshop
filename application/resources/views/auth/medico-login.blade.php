@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-slate-100">
-    <div class="flex flex-col justify-center items-center h-[90vh]">
+    <div class="flex flex-col justify-center items-center h-[90vh] p-5">
         <img src="/images/dog.png" alt="doguinho" class="h-40">
         <form method="POST" action="{{ route('medico.login') }}"
             class="flex flex-col mt-2 rounded-lg shadow-lg justify-center items-center bg-white w-[400px] h-[300px]">

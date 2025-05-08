@@ -12,7 +12,7 @@
                 <div>
                     <label for="image" class="block text-gray-700 font-bold mb-2">Imagem do seu pet</label>
                     <img id="previewImage" src="https://cdn.mindminers.com/blog/uploads/2022/11/pets.png"
-                        alt="imagem de seleção" class="w-32 h-32 object-cover cursor-pointer mx-auto opacity-65 rounded-lg">
+                        alt="imagem de seleção" class="w-32 h-32 object-cover cursor-pointer mx-auto opacity-55 rounded-lg">
                     <input type="file" id="imageInput" name="image" class="hidden" accept="image/*">
                 </div>
                 <div class="mt-2">

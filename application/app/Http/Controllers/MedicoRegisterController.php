@@ -20,7 +20,6 @@ class MedicoRegisterController extends Controller
 
     public function register(Request $request)
     {
-        // Validação dos dados
         $validator = Validator::make($request->all(), [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:medicos'],
@@ -33,14 +32,12 @@ class MedicoRegisterController extends Controller
                 ->withInput();
         }
 
-        // Criação do médico
         $medico = Medico::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
 
-        // Autenticar e redirecionar para o dashboard do médico
         Auth::guard('medico')->login($medico);
 
         return redirect()->route('medico.dashboard');
