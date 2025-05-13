@@ -38,7 +38,7 @@
             <div class="flex justify-center items-center p-4">
                 <p>
                     Você não tem pet cadastrado ainda. Cadastrar Pet?
-                    <a href="/actions/create" class="text-orange-500 hover:text-orange-600 font-medium cursor-pointer">
+                    <a href="/pages/create" class="text-orange-500 hover:text-orange-600 font-medium cursor-pointer">
                         Cadastrar pet
                     </a>
                 </p>
