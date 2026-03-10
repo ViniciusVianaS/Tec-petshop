@@ -10,19 +10,19 @@
             <form action="/pets" method="POST" enctype="multipart/form-data" class="mt-6 w-[300px]">
                 @csrf
                 <div>
-                    <label for="image" class="block text-gray-700 font-bold mb-2">Imagem do seu pet</label>
+                    <label for="image" class="block text-gray-700 font-bold mb-2">Coloque aqui a imagem do seu pet:</label>
                     <img id="previewImage" src="https://cdn.mindminers.com/blog/uploads/2022/11/pets.png"
                         alt="imagem de seleção" class="w-32 h-32 object-cover cursor-pointer mx-auto opacity-55 rounded-lg">
                     <input type="file" id="imageInput" name="image" class="hidden" accept="image/*">
                 </div>
                 <div class="mt-2">
-                    <label for="nome" class="block text-gray-700 font-bold mb-2">Nome do seu pet</label>
+                    <label for="nome" class="block text-gray-700 font-bold mb-2">Qual é o nome do seu pet?</label>
                     <input type="text"
                         class="block w-full text-gray-700 border-none rounded p-1 leading-tight focus:outline-none focus:bg-slate-100 focus:border-blue-500"
                         id="nome" name="nome" placeholder="Ex: Thor" required>
                 </div>
                 <div class="mt-2">
-                    <label for="pet" class="block text-gray-700 font-bold mb-2">Qual é seu pet</label>
+                    <label for="pet" class="block text-gray-700 font-bold mb-2">Qual é o tipo do seu pet?</label>
                     <input type="text"
                         class="block w-full text-gray-700 border-none rounded p-1 leading-tight focus:outline-none focus:bg-slate-100 focus:border-blue-500"
                         id="pet" name="pet" placeholder="Ex: Cachorro" required>
